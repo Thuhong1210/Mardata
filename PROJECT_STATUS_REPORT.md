@@ -2,7 +2,6 @@
 
 **Ngày báo cáo:** 9 Tháng 12, 2025  
 **Chủ đề:** Các yếu tố quyết định lòng trung thành của người tiêu dùng trên nền tảng TMĐT  
-**Người đánh giá:** Antigravity AI Assistant
 
 ---
 
@@ -450,6 +449,6 @@ Row 335: 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,2
 
 ---
 
-**Được tạo bởi:** Antigravity AI Assistant  
+**Được tạo bởi:** thuhong
 **Ngày:** 9 Tháng 12, 2025  
 **Lần cập nhật cuối:** 20:45 ICT
