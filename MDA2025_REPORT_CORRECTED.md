@@ -695,11 +695,67 @@ Statista. (2024). *E-commerce in Vietnam - statistics & facts*. Retrieved from h
 
 ### Appendix A: Conceptual Model
 
-[Original Expected Model + Revised Model showing negative relationships]
+**Figure A.1: Original Hypothesized Framework**
+*[Anticipated Positive Drivers of Loyalty]*
+
+```mermaid
+graph LR
+    subgraph Platform["Platform Characteristics"]
+      direction TB
+      INT[Interactivity]
+      INF[Informativeness]
+      VE[Visual Engagement]
+      NVSE[Navigation Ease]
+    end
+    
+    subgraph Psych["Psychological Responses"]
+      direction TB
+      TRUST[Trust]
+      CONV[Convenience]
+      ENJ[Enjoyment]
+      SC[Self-Control]
+    end
+
+    Platform -->|H1 (+)| AL((Attitudinal Loyalty))
+    Psych -->|H2 (+)| AL
+```
+
+**Figure A.2: Revised "Expectation-Reality Gap" Model**
+*[Based on Empirical Regression Results]*
+
+```mermaid
+graph LR
+    %% Significant Positive
+    VE[Visual Engagement] ==>|"+ (β=.398)"| AL((Attitudinal Loyalty))
+    
+    %% Significant Negative
+    INT[Interactivity] -->|"- (β=-.313)"| AL
+    TRUST[Trust] -->|"- (β=-.569)"| AL
+    CONV[Convenience] -->|"- (β=-.258)"| AL
+    ENJ[Enjoyment] -->|"- (β=-.351)"| AL
+
+    %% Non-Significant
+    INF[Informativeness] -.->|ns| AL
+    NVSE[Navigation Ease] -.->|ns| AL
+    SC[Self-Control] -.->|ns| AL
+
+    %% Styling
+    style VE stroke:#00b894,stroke-width:2px,fill:#fff
+    style AL fill:#ffeaa7,stroke:#fdcb6e
+    
+    style INT stroke:#ff7675,stroke-width:2px,fill:#fff
+    style TRUST stroke:#ff7675,stroke-width:2px,fill:#fff
+    style CONV stroke:#ff7675,stroke-width:2px,fill:#fff
+    style ENJ stroke:#ff7675,stroke-width:2px,fill:#fff
+
+    linkStyle 0 stroke:#00b894,stroke-width:3px;
+    linkStyle 1,2,3,4 stroke:#ff7675,stroke-width:2px;
+    linkStyle 5,6,7 stroke:#b2bec3,stroke-dasharray: 5 5;
+```
 
 ### Appendix B: Survey Questionnaire
 
-**Attitudinal Loyalty Items (coding verificication needed):**
+**Attitudinal Loyalty Items (coding verification needed):**
 1. I intend to continue shopping for traditional products on this platform
 2. I would recommend this platform to friends for traditional products
 3. This platform is my first choice for traditional Vietnamese products

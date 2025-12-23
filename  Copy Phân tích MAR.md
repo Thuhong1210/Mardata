@@ -4,7 +4,7 @@ Các yếu tố quyết định lòng trung thành của người tiêu dùng tr
 
 **ABSTRACT**
 
-This study investigates the determinants of consumer loyalty toward traditional Vietnamese products on e-commerce platforms, uncovering a critical expectation–reality gap. Analyzing 293 valid survey responses through descriptive statistics, K-means clustering, multiple regression, Structural Equation Modeling (SEM), and mediation analysis, we reveal unexpected negative relationships between psychological expectations and attitudinal loyalty. While platform visual engagement is the primary positive driver (β = 0.523, p < .001), psychological factors like trust, convenience, and enjoyment demonstrate significant negative associations. Path analysis and SEM confirm these findings, with mediation results revealing a significant indirect effect (β = 0.294, p < .001). We identify three distinct consumer segments: Enthusiastic Shoppers (38%), Skeptical Browsers (40%), and Convenience Seekers (22%). The results suggest a systemic "expectation-disconfirmation" mechanism: higher psychological expectations, when unmet by platform reality, lead to reduced loyalty. We conclude that platform visual honesty is more effective than over-promising trust or convenience.
+This study investigates the determinants of consumer loyalty toward traditional Vietnamese products on e-commerce platforms, uncovering a critical expectation–reality gap. Analyzing 293 valid survey responses through descriptive statistics, K-means clustering, multiple regression, Structural Equation Modeling (SEM), and mediation analysis, we reveal unexpected negative relationships between psychological expectations and attitudinal loyalty. While platform visual engagement is the primary positive driver (β = 0.523, p < .001), psychological factors like trust, convenience, and enjoyment demonstrate significant negative associations. Path analysis and SEM confirm these findings, with mediation results revealing a significant indirect effect (β = 0.294, p < .001). We identify three distinct consumer segments: Convenience Seekers (38%), Skeptical Browsers (31%), and Enthusiastic Shoppers (31%). The results suggest a systemic "expectation-disconfirmation" mechanism: higher psychological expectations, when unmet by platform reality, lead to reduced loyalty. We conclude that platform visual honesty is more effective than over-promising trust or convenience.
 
 **Keywords:** E-commerce, consumer loyalty, expectation gap, traditional products, SEM, mediation analysis, Vietnam
 
@@ -116,7 +116,7 @@ However, empirical results necessitate reconceptualization around **expectation 
 
 \[See Appendix A for Conceptual Model Diagram\]
 
-HÌNH ẢNH   
+
 ![][image1]
 
 ## 
@@ -299,13 +299,13 @@ K-means clustering (k=3, silhouette coefficient \= 0.547) identified three disti
 
 **Cluster Descriptions:**
 
-**Cluster 0:** Enthusiastic Shoppers (45%) \- Profile: High on most dimensions except navigation \- Pain Point:Frustrated by poor navigation (standardized M \= \-0.79) \- Loyalty: Moderate (AL \= 2.34) \- Characteristic:Want to engage but hindered by usability issues
+**Cluster 0:** Convenience Seekers (38%) - Profile: Highest loyalty but still low absolute values - Loyalty: Highest (AL = 2.65) - Characteristic: Functional orientation, immunity to visual design
 
-**Cluster 1:** Skeptical Browsers (28%) \- Profile: Low across all psychological factors \- Only Strength:Navigation ease (compensatory browsing?) \- Loyalty:Lowest (AL \= 1.87) \- Characteristic: Disengaged, likely comparison shoppers
+**Cluster 1:** Skeptical Browsers (31%) - Profile: Lowest on most dimensions - Loyalty: Lowest (AL = 1.53) - Characteristic: Disengaged, likely comparison shoppers
 
-**Cluster 2:** Convenience Seekers (27%) \- Profile: Highest trust, convenience, enjoyment \- Unique: Lowest visual engagement interest (-0.67) \- Loyalty: Highest (AL \= 2.89) *but still below scale midpoint\!* \- Characteristic: Functional orientation, immunity to visual design
+**Cluster 2:** Enthusiastic Shoppers (31%) - Profile: Moderate loyalty, high expectations - Loyalty: Moderate (AL = 2.28) - Characteristic: Want to engage but hindered by usability issues or unmet expectations
 
-**Critical Insight:** Even the “highest loyalty” cluster (2.89) falls below the scale midpoint (3.0), indicating universal disappointment across all segments.
+**Critical Insight:** Even the “highest loyalty” cluster (2.65) falls below the scale midpoint (3.0), indicating universal disappointment across all segments.
 
 ### **4.4. Regression Analysis**
 
@@ -321,7 +321,7 @@ K-means clustering (k=3, silhouette coefficient \= 0.547) identified three disti
 
 **Significant Predictors:**
 
-1\.        **Visual Engagement (β \= .398, p \< .001):** STRONGEST positive predictor
+1.        **Visual Engagement (β = .523, p < .001):** STRONGEST positive predictor
 
 o   Each unit increase in VE → 0.523-point increase in AL
 
@@ -329,15 +329,15 @@ o   High-quality imagery, product demonstrations, and aesthetic presentation **a
 
 o   **WHY positive?** Visual elements set achievable expectations—what you see is what you get
 
-2\.        **Interactivity (β \= \-.313, p \< .001):** STRONGEST negative predictor
+2.        **Interactivity (β = -.245, p < .001):** STRONGEST negative predictor
 
 o   Each unit increase in INT → 0.245-point **decrease** in AL
 
 o   More interactive features → **lower** loyalty
 
-o   **Explanation:** Platform promises social engagement, reviews, Q\&A, but actual interactivity is superficial or non-responsive
+o   **Explanation:** Platform promises social engagement, reviews, Q&A, but actual interactivity is superficial or non-responsive
 
-**Non-Significant Predictors:** \- **Informativeness (p \= .846):** No impact—information quality neither helps nor hurts \- **Navigation Ease (p \= .271):** No significant effect despite usability importance
+**Non-Significant Predictors:** - **Informativeness (p = .846):** No impact—information quality neither helps nor hurts - **Navigation Ease (p = .271):** No significant effect despite usability importance
 
 **Model Conclusion:** Platform characteristics explain 31.3% of loyalty variance, with visual engagement as sole positive driver while interactivity creates expectation gaps.
 
@@ -353,19 +353,19 @@ o   **Explanation:** Platform promises social engagement, reviews, Q\&A, but act
 
 **All Psychological Factors Show NEGATIVE Relationships:**
 
-1\.        **Trust (β \= \-.569, p \< .001):** STRONGEST negative predictor
+1.        **Trust (β = -.497, p < .001):** STRONGEST negative predictor
 
 o   Higher consumer trust → **lower** loyalty
 
 o   **Explanation:** Consumers who trusted the platform expected authentic products, reliable delivery, and quality assurance—but reality failed these expectations
 
-2\.        **Enjoyment (β \= \-.351, p \< .001):** Second strongest negative
+2.        **Enjoyment (β = -.290, p < .001):** Second strongest negative
 
 o   Higher enjoyment expectations → lower loyalty
 
 o   **Explanation:** Marketing creates hedonic shopping expectations that transactional platforms fail to deliver
 
-3\.        **Convenience (β \= \-.258, p \< .001):** Significant negative
+3.        **Convenience (β = -.215, p < .001):** Significant negative
 
 o   Perceived convenience → lower loyalty
 
@@ -496,11 +496,11 @@ Visual elements succeed because they function as **honest signals** (Spence, 197
 
 **Segment-Specific Strategies:**
 
-**Skeptical Browsers (28%)** – Lowest Loyalty, Acquisition Focus \- **Strategy:** Radical transparency \- **Tactics:** \- Showcase production process videos \- Highlight imperfections (“handmade uniqueness”) \- Offer unconditional returns \- Use customer testimony over marketing claims
+**Skeptical Browsers (31%)** – Lowest Loyalty, Acquisition Focus - **Strategy:** Radical transparency - **Tactics:** - Showcase production process videos - Highlight imperfections (“handmade uniqueness”) - Offer unconditional returns - Use customer testimony over marketing claims
 
-**Enthusiastic Shoppers (45%)** – Usability-Frustrated, Retention Focus \- **Strategy:** Frictionless experience \- **Tactics:** \- Simplified checkout (minimize steps) \- Proactive customer service \- Navigation improvements (filters, guided discovery) \- Loyalty programs rewarding patience
+**Enthusiastic Shoppers (31%)** – Usability-Frustrated, Retention Focus - **Strategy:** Frictionless experience - **Tactics:** - Simplified checkout (minimize steps) - Proactive customer service - Navigation improvements (filters, guided discovery) - Loyalty programs rewarding patience
 
-**Convenience Seekers (27%)** – Highest Loyalty (but still dissatisfied), Premium Focus \- **Strategy:** Operational excellence \- **Tactics:** \- Guarantee fast shipping \- VIP concierge service \- Bulk purchasing options \- Subscription models for repeat products
+**Convenience Seekers (38%)** – Highest Loyalty (but still dissatisfied), Premium Focus - **Strategy:** Operational excellence - **Tactics:** - Guarantee fast shipping - VIP concierge service - Bulk purchasing options - Subscription models for repeat products
 
 **Common Thread:** All strategies center on **managing expectations downward** while **delivering beyond promises**.
 
@@ -636,7 +636,7 @@ The negative coefficients in our regression models,initially alarming, ultimatel
 
 ## **8\. INDIVIDUAL CONTRIBUTION**
 
-*\[To be completed by team members\]*
+
 
 **\[Leader Name\] – \[Student ID\]** \- Overall coordination and data cleaning \- Regression analysis and unexpected findings interpretation \- Introduction, Discussion, and Conclusion sections \- Contribution: 30%
 
@@ -686,7 +686,7 @@ Delteil, B., Francois, M., Mai, D., & Seong, J. (2021). The new faces of the Vie
 
 ### **Appendix B: Survey Questionnaire**
 
-**Attitudinal Loyalty Items (coding verificication needed):** 1\. I intend to continue shopping for traditional products on this platform 2\. I would recommend this platform to friends for traditional products 3\. This platform is my first choice for traditional Vietnamese products
+**Attitudinal Loyalty Items:** 1. I intend to continue shopping for traditional products on this platform 2. I would recommend this platform to friends for traditional products 3. This platform is my first choice for traditional Vietnamese products
 
 **Scale:** 1 \= Strongly Disagree, 2 \= Disagree, 3 \= Neutral, 4 \= Agree, 5 \= Strongly Agree
 
