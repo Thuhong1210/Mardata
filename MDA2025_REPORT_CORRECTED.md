@@ -23,7 +23,7 @@
 
 ## ABSTRACT
 
-This study investigates the determinants of consumer loyalty toward traditional Vietnamese products on e-commerce platforms, uncovering a critical expectation-reality gap that challenges conventional understanding. Analyzing 293 valid survey responses through descriptive statistics, factor analysis, K-means clustering, Pearson correlation, and multiple regression, we reveal unexpected negative relationships between psychological expectations and attitudinal loyalty. While platform visual engagement emerges as theonly significant positive driver (β = 0.523, p < .001), psychological factors including trust, convenience, and enjoyment demonstrate significant negative associations with loyalty—suggesting that heightened expectations, when unmet by platform reality, lead to disappointment and reduced loyalty. Our cluster analysis identifies three distinct segments: Enthusiastic Shoppers (38%), Skeptical Browsers (40%), and Convenience Seekers (22%), each requiring differentiated strategies. Regression results show psychological factors (R² = 0.610) slightly outperform platform characteristics (R² = 0.313) in explaining loyalty variance, but both models reveal troubling patterns indicating systemic platform deficiencies in meeting consumer expectations for traditional products. This research contributes critical insights for platform developers and traditional product vendors regarding the perils of over-promising and under-delivering in digital heritage product marketplaces.
+This study investigates the determinants of consumer loyalty toward traditional Vietnamese products on e-commerce platforms, uncovering a critical expectation-reality gap that challenges conventional understanding. Analyzing 293 valid survey responses through descriptive statistics, factor analysis, K-means clustering, Pearson correlation, and multiple regression, we reveal unexpected negative relationships between psychological expectations and attitudinal loyalty. While platform visual engagement emerges as the only significant positive driver (B = 0.523, p < .001), psychological factors including trust, convenience, and enjoyment demonstrate significant negative associations with loyalty—suggesting that heightened expectations, when unmet by platform reality, lead to disappointment and reduced loyalty. Our cluster analysis identifies three distinct segments: Enthusiastic Shoppers (45%), Skeptical Browsers (28%), and Convenience Seekers (27%), each requiring differentiated strategies. Regression results show psychological factors (R² = 0.610) slightly outperform platform characteristics (R² = 0.313) in explaining loyalty variance, but both models reveal troubling patterns indicating systemic platform deficiencies in meeting consumer expectations for traditional products. This research contributes critical insights for platform developers and traditional product vendors regarding the perils of over-promising and under-delivering in digital heritage product marketplaces.
 
 **Keywords:** E-commerce, consumer loyalty, expectation gap, traditional products, platform characteristics, Vietnam
 
@@ -695,67 +695,97 @@ Statista. (2024). *E-commerce in Vietnam - statistics & facts*. Retrieved from h
 
 ### Appendix A: Conceptual Model
 
-**Figure A.1: Original Hypothesized Framework**
-*[Anticipated Positive Drivers of Loyalty]*
-
+#### Figure A.1: Initial Hypothesized Framework (Pre-Analysis)
 ```mermaid
 graph LR
-    subgraph Platform["Platform Characteristics"]
-      direction TB
-      INT[Interactivity]
-      INF[Informativeness]
-      VE[Visual Engagement]
-      NVSE[Navigation Ease]
-    end
-    
-    subgraph Psych["Psychological Responses"]
-      direction TB
-      TRUST[Trust]
-      CONV[Convenience]
-      ENJ[Enjoyment]
-      SC[Self-Control]
+    subgraph Platform_Factors [Platform Characteristics]
+    direction TB
+    INT[Interactivity]
+    INF[Informativeness]
+    VE[Visual Engagement]
+    NVSE[Navigation Ease]
     end
 
-    Platform -->|H1 (+)| AL((Attitudinal Loyalty))
-    Psych -->|H2 (+)| AL
+    subgraph Psych_Factors [Psychological Responses]
+    direction TB
+    TRUST[Trust]
+    CONV[Convenience]
+    ENJ[Enjoyment]
+    SC[Self-Control]
+    end
+
+    AL(Attitudinal Loyalty)
+
+    INT -->|+| AL
+    INF -->|+| AL
+    VE -->|+| AL
+    NVSE -->|+| AL
+
+    TRUST -->|+| AL
+    CONV -->|+| AL
+    ENJ -->|+| AL
+    SC -->|+| AL
+
+    style Platform_Factors fill:#e1f5fe,stroke:#01579b
+    style Psych_Factors fill:#fff3e0,stroke:#e65100
+    style AL fill:#e8f5e9,stroke:#1b5e20
 ```
 
-**Figure A.2: Revised "Expectation-Reality Gap" Model**
-*[Based on Empirical Regression Results]*
-
+#### Figure A.2: Revised Empirical Model (Expectation-Reality Gap)
 ```mermaid
 graph LR
-    %% Significant Positive
-    VE[Visual Engagement] ==>|"+ (β=.398)"| AL((Attitudinal Loyalty))
-    
-    %% Significant Negative
-    INT[Interactivity] -->|"- (β=-.313)"| AL
-    TRUST[Trust] -->|"- (β=-.569)"| AL
-    CONV[Convenience] -->|"- (β=-.258)"| AL
-    ENJ[Enjoyment] -->|"- (β=-.351)"| AL
+    subgraph Platform_Factors [Platform Characteristics]
+    direction TB
+    INT[Interactivity]
+    INF[Informativeness]
+    VE[Visual Engagement]
+    NVSE[Navigation Ease]
+    end
 
-    %% Non-Significant
-    INF[Informativeness] -.->|ns| AL
-    NVSE[Navigation Ease] -.->|ns| AL
-    SC[Self-Control] -.->|ns| AL
+    subgraph Psych_Factors [Psychological Factors]
+    direction TB
+    TRUST[Trust]
+    CONV[Convenience]
+    ENJ[Enjoyment]
+    SC[Self-Control]
+    end
+
+    AL(Attitudinal Loyalty)
+
+    %% Significant Paths
+    VE --"Positive (β=.398***)"--> AL
+    INT --"NEGATIVE (β=-.313***)"--> AL
+    
+    TRUST --"NEGATIVE (β=-.569***)"--> AL
+    CONV --"NEGATIVE (β=-.258***)"--> AL
+    ENJ --"NEGATIVE (β=-.351***)"--> AL
+
+    %% Non-Significant Paths
+    INF -. "ns" .-> AL
+    NVSE -. "ns" .-> AL
+    SC -. "ns" .-> AL
 
     %% Styling
-    style VE stroke:#00b894,stroke-width:2px,fill:#fff
-    style AL fill:#ffeaa7,stroke:#fdcb6e
-    
-    style INT stroke:#ff7675,stroke-width:2px,fill:#fff
-    style TRUST stroke:#ff7675,stroke-width:2px,fill:#fff
-    style CONV stroke:#ff7675,stroke-width:2px,fill:#fff
-    style ENJ stroke:#ff7675,stroke-width:2px,fill:#fff
+    linkStyle 0 stroke:#2ecc71,stroke-width:3px,color:#2ecc71; %% VE positive
+    linkStyle 1 stroke:#e74c3c,stroke-width:3px,color:#e74c3c; %% INT negative
+    linkStyle 2 stroke:#e74c3c,stroke-width:3px,color:#e74c3c; %% TRUST negative
+    linkStyle 3 stroke:#e74c3c,stroke-width:3px,color:#e74c3c; %% CONV negative
+    linkStyle 4 stroke:#e74c3c,stroke-width:3px,color:#e74c3c; %% ENJ negative
 
-    linkStyle 0 stroke:#00b894,stroke-width:3px;
-    linkStyle 1,2,3,4 stroke:#ff7675,stroke-width:2px;
-    linkStyle 5,6,7 stroke:#b2bec3,stroke-dasharray: 5 5;
+    style VE fill:#dcedc8,stroke:#33691e,stroke-width:2px
+    style INT fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+    style TRUST fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+    style CONV fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+    style ENJ fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+    
+    style Platform_Factors fill:#f5f5f5,stroke:#9e9e9e
+    style Psych_Factors fill:#f5f5f5,stroke:#9e9e9e
+    style AL fill:#e1f5fe,stroke:#01579b
 ```
 
 ### Appendix B: Survey Questionnaire
 
-**Attitudinal Loyalty Items (coding verification needed):**
+**Attitudinal Loyalty Items (coding verificication needed):**
 1. I intend to continue shopping for traditional products on this platform
 2. I would recommend this platform to friends for traditional products
 3. This platform is my first choice for traditional Vietnamese products
